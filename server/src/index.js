@@ -32,7 +32,7 @@ async function startApolloServer() {
       mocks,
     })
    })
-  const { url } = startStandaloneServer(server)
+  const { url } = await startStandaloneServer(server)
 
   console.log(`
     🚀  Server is running!
